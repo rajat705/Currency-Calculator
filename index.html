@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Currency Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html" class="w3-bar-item w3-button w3-wide">CURRENCY CALCULATOR - Exchange one Currency to another Currency</a>
+    </div>
+    <div class="container">
+        <h1 id="home">Currency Convertor</h1>
+        <form id="currencyForm">
+            <label for="amount">Amount:</label>
+            <input id="amount" type="number" placeholder="Enter amount" required>
+
+            <label for="baseCurrency">From Currency:</label>
+            <select id="baseCurrency" required>
+                <option value="" disabled selected>Please choose currency to convert from . . .</option>
+                <!-- Options will be dynamically populated by JavaScript -->
+                </select>
+            </select>
+
+            <label for="targetCurrency">To Currency:</label>
+            <select id="targetCurrency" required>
+                <option value="" disabled selected>Please choose currency to convert to . . .</option>
+                <!-- Options will be dynamically populated by JavaScript -->
+            </select>
+
+            <input type="submit" value="Convert">
+        </form>
+
+        <div id="result"></div>
+    </div>
+    <footer class="w3-center w3-black w3-padding-64">
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <p class="w3-small">Here to help you with converting currencies. So jump right in!</p>
+    </footer>
+
+</body>
+</html>
